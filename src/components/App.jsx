@@ -16,7 +16,7 @@ export class App extends Component {
     filter: '',
   };
 
-   componentDidMount() {
+  componentDidMount() {
     const contacts = localStorage.getItem('contacts');
     const parsedContacts = JSON.parse(contacts);
     if (parsedContacts) {
@@ -30,7 +30,6 @@ export class App extends Component {
   }
 
   handleSubmit = (values, { resetForm }) => {
-
     const { name, number } = values;
     const contact = {
       name,
@@ -44,8 +43,8 @@ export class App extends Component {
       ? alert(`${contact.name} is already in contacts`)
       : this.setState(prevState => ({
           contacts: [...prevState.contacts, { ...values, id: nanoid() }],
-      }));
-    
+        }));
+
     resetForm();
   };
 
@@ -55,9 +54,9 @@ export class App extends Component {
     );
   };
 
-  onFilterChange = e => {
+  onFilterChange = event => {
     this.setState({
-      filter: e.currentTarget.value,
+      filter: event.currentTarget.value,
     });
   };
 
