@@ -1,9 +1,9 @@
 import { Component } from 'react';
-import { ContactList } from 'components/Contacts/ContactList';
 import { nanoid } from 'nanoid';
-import { Filter } from 'components/Filter/Filter';
-import { ContactForm } from 'components/ContactForm/ContactForm';
 import { Container } from 'components/App.styled';
+import ContactForm from 'components/contactForm';
+import ContactList from 'components/contactList';
+import Filter from 'components/filter';
 
 export class App extends Component {
   state = {
@@ -36,6 +36,7 @@ export class App extends Component {
       name,
       number,
     };
+
     const dublicateContact = this.findDublicateContact(
       contact,
       this.state.contacts
@@ -43,7 +44,7 @@ export class App extends Component {
     dublicateContact
       ? alert(`${contact.name} is already in contacts`)
       : this.setState(prevState => ({
-          contacts: [...prevState.contacts, { ...values, id: nanoid() }],
+          contacts: [...prevState.contacts, { ...contact, id: nanoid() }],
         }));
 
     resetForm();
@@ -55,9 +56,9 @@ export class App extends Component {
     );
   };
 
-  onFilterChange = event => {
+  onFilterChange = e => {
     this.setState({
-      filter: event.currentTarget.value,
+      filter: e.currentTarget.value,
     });
   };
 
@@ -80,7 +81,9 @@ export class App extends Component {
       <Container>
         <h1>Phonebook</h1>
         <ContactForm onSubmit={this.handleSubmit} />
-        {this.state.contacts.length > 0 && <h2>Contacts</h2>}
+        {this.state.contacts.length > 0 && (
+          <h2 style={{ fontSize: 30 }}>Contacts:</h2>
+        )}
         {this.state.contacts.length > 0 && (
           <Filter
             value={this.state.filter}
