@@ -13,7 +13,6 @@ export const ContactItemButton = styled.button`
   border-radius: 5px;
   font-size: 16px;
   font-weight: 600;
-  color: #c4c4c4;
   cursor: pointer;
   margin-top: auto;
   padding: 3px;

@@ -11,4 +11,5 @@ const ContactItem = ({ name, number, onClick }) => {
     </>
   );
 };
+
 export default ContactItem;
