@@ -17,7 +17,6 @@ export const ContactListItem = styled.li`
   justify-content: center;
   align-items: center;
   width: 400px;
-  border: 2px solid var(--second-brand-color);
   padding: 6px;
   text-align: center;
   border-radius: 8px;

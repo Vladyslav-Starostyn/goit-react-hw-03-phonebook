@@ -9,7 +9,6 @@ export const FormEl = styled(Form)`
   align-items: center;
   flex-direction: column;
   background-color: var(--first-brand-background-color);
-  border: 2px solid var(--second-brand-color);
   border-radius: 8px;
   box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.5);
 `;
