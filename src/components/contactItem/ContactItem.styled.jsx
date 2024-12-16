@@ -8,6 +8,7 @@ export const ContactItemNumber = styled.p`
 
 export const ContactItemButton = styled.button`
   width: 100px;
+  color: var(--brand-text-color);
   background-color: var(--second-brand-color);
   border: 2px solid var(--second-brand-color);
   border-radius: 5px;

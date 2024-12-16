@@ -37,6 +37,7 @@ export const Label = styled.label`
 export const SubmitButton = styled.button`
   width: 150px;
   height: 40px;
+  color: var(--brand-text-color);
   background-color: var(--second-brand-background-color);
   border: none;
   border-radius: 8px;
