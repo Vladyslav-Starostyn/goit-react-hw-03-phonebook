@@ -3,7 +3,7 @@
 body {
   font-family: sans-serif;
   line-height: 1.5;
-  background-color: #f4ffe4;
+  background-color: #dddddd;
 }
 
 h1,
@@ -39,9 +39,9 @@ code {
 }
 
 :root {
-  --first-brand-color: #3a441b;
-  --first-brand-background-color: #647822;
-  --second-brand-color: #a8b970;
-  --second-brand-background-color: #a8b970;
-  --error-color:#bf0a32eb;
+  --first-brand-color: #343434;
+  --first-brand-background-color: #6A6A6A;
+  --second-brand-color: #ff590a;
+  --second-brand-background-color: #FF5100;
+  --error-color: #bf0a32eb;
 }
