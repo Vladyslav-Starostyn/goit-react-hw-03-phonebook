@@ -3,7 +3,7 @@
 body {
   font-family: sans-serif;
   line-height: 1.5;
-  background-color: #dddddd;
+  background-color: #e5ffd8;
 }
 
 h1,
@@ -41,7 +41,7 @@ code {
 :root {
   --first-brand-color: #343434;
   --first-brand-background-color: #6A6A6A;
-  --second-brand-color: #ff590a;
-  --second-brand-background-color: #FF5100;
+  --second-brand-color: #5bff66;
+  --second-brand-background-color: #49ff55;
   --error-color: #bf0a32eb;
 }
